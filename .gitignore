@@ -1,3 +1,4 @@
 .env
 env_nlp_jobs/
 data/
+src/__pycache__/
