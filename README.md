@@ -1,10 +1,10 @@
 # NLP_JOBS
 
-Ce projet est un bot qui scrute les offres d'emploi postée sur le site [d'offres d'emplois, stages et post-doc](http://w3.erss.univ-tlse2.fr/membre/tanguy/offres.html) maintenu par Ludovic Tanguy et les poste sur un canal Discord.
+Ce projet est un bot qui scrute les offres d'emploi postées sur le site [d'offres d'emplois, stages et post-doc](http://w3.erss.univ-tlse2.fr/membre/tanguy/offres.html) maintenu par Ludovic Tanguy et les poste sur un canal Discord.
 
 ## Installation
 
-1. Clonez le dépôt :
+1. Clonez le dépôt 
 
 2. Créer env_virtuel
 
@@ -15,7 +15,8 @@ pip install -r requirements.txt
 
 DISCORD_WEBHOOK_URL=votre_webhook_url
 SITE_URL=votre_site_url
-PATH=votre_chemin
+DATA=data_folder
+MEDIA=media_folder
 
 5. Exécutez le script 
-python src/main.py
+python src/tanguy_jobs.py

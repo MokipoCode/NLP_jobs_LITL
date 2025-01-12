@@ -7,7 +7,7 @@ import os
 from datetime import date
 import datetime
 import calendar
-from config import DISCORD_WEBHOOK_URL, SITE_URL, DATA
+from config import DISCORD_WEBHOOK_URL, SITE_URL, DATA, MEDIA
 
 # def jobs() :
 
@@ -81,7 +81,7 @@ time.sleep(3)
 if update != []:
     for x in update :
         webhook = DiscordWebhook(url=DISCORD_WEBHOOK_URL)
-        with open(DATA+"alert.gif", "rb") as f:
+        with open(MEDIA+"alert.gif", "rb") as f:
             webhook.add_file(file=f.read(), filename='alert.gif')
         embed = DiscordEmbed(title='Nouvelle offre d\'emploi ! ', url=x[-1])
         embed.set_author(name='Le bot du travail', url=SITE_URL, icon_url='attachment://alert.gif')
